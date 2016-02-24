@@ -1,13 +1,7 @@
 /*
-    "Screen Time"
-    16th February 2016
-    ------------------
-    Michael Day
-    @mday
-    ------------------
-    Attribution:
-    Tangram from https://mapzen.com/
-    OSM contributors
+    Next iteration of Screen Time
+    24th February 2016
+
 */
 
 var symptom; // div for the texts

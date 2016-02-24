@@ -5,7 +5,7 @@
 
 cameras:
     camera1:
-        type: isometric
+        type: perspective
 
 lights:
     #light1:
@@ -36,13 +36,13 @@ layers:
 #                order: 0
 #                color: [0,0,0,1]
 
-    landuse:
-        data: { source: osm }
-        draw:
-            polygons:
-                order: 1
-                #color: [0, 62, 128] ?
-                color: '#556483'
+#    landuse:
+#        data: { source: osm }
+#        draw:
+#            polygons:
+#                order: 1
+#                #color: [0, 62, 128] ?
+#                color: '#556483'
 
 #    water:
 #        data: { source: osm }
@@ -51,40 +51,40 @@ layers:
 #                order: 2
 #                color: [255,255,255,1]
 
-    roads:
-        data: { source: osm }
-        filter:
-          # not: { kind: ["path", "rail"] }
-        draw:
-            lines:
-                order: 4
-                color: '#99ccff'
-                width: 6
-                cap: butt
-        highway:
-            filter:
-                kind: highway
-            draw:
-                lines:
-                    order: 5
-                    color: '#99ccff'
-                    width: 4
-
-        minor_road:
-            filter:
-                kind: minor_road
-            draw:
-                lines:
-                    order: 3
-                    color: '#cce5ff'
-                    width: 3
+#    roads:
+#        data: { source: osm }
+#        filter:
+#          # not: { kind: ["path", "rail"] }
+#        draw:
+#            lines:
+#                order: 4
+#                color: '#000000'
+#                width: 6
+#                cap: butt
+#        highway:
+#            filter:
+#                kind: highway
+#            draw:
+#                lines:
+#                    order: 5
+#                    color: '#000000'
+#                    width: 4
+#
+#        minor_road:
+#            filter:
+#                kind: minor_road
+#            draw:
+#                lines:
+#                    order: 3
+#                    color: '#000000'
+#                    width: 3
 
     buildings:
         data: { source: osm }
         draw:
             polygons:
                 order: 9
-                color: '#grey' #|
+                color: '#000000' #|
                     #    function () {
                     #        var h = feature.height || 20;
                     #        h = Math.min((h + 50)/ 255, .3); // max brightness: .5

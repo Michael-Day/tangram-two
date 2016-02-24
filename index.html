@@ -25,6 +25,13 @@
             margin: 0px;
             border: 0px;
             padding: 0px;
+
+
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            z-index: 2;
         }
         #text {
             height: auto;
@@ -49,7 +56,7 @@
             width: 100%;
             position: absolute;
             z-index: 0;
-            background-color: grey;
+            /*background-color: white;*/
         }
         .hidden {
 
@@ -68,7 +75,10 @@
   </head>
 
   <body>
-    <div id="map"; ></div>
+
+    <div id="map"; >
+        <iframe src="https://player.vimeo.com/video/138878210?autoplay=1&color=fafafa&title=0&byline=0&portrait=0" width="900" height="506" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
 
     <!-- leaflet -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.0-beta.2/leaflet.js"></script>
@@ -80,6 +90,5 @@
     <!-- All the mapzen and leaflet stuff is in the js file-->
     <script language="javascript" type="text/javascript" src="text-array.js"></script>
     <script language="javascript" type="text/javascript" src="map-overlay.js"></script>
-
   </body>
 </html>
